@@ -1,8 +1,8 @@
 const params = {
-  appid: 'wx46f82cb9d312a68a',
-  secret: '56aa6a924f10f8b473c378c692993fe9',
-  touser: 'ogMwa631uyHapoA-Ij4tVCAVUbCg',
-  template_id: 'w-mvk4GNq5pH9ENYa7l5AVGpLLhwG-9UOWejecqK8-U',
+  appid: '',
+  secret: '',
+  touser: '',
+  template_id: '',
 }
 
 const LOVE_DAY_START = '6/11/2022';
