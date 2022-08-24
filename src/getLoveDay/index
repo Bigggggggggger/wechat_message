@@ -1,0 +1,9 @@
+const { LOVE_DAY_START } = require('../config/config')
+
+const getLoveDay = () => { 
+    const start = new Date(LOVE_DAY_START);
+    const end = new Date();
+    return (Math.ceil((end.getTime() - start.getTime()) / (1000 * 3600 * 24)) - 1).toString();
+}
+
+module.exports = getLoveDay;

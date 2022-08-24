@@ -1,35 +1,46 @@
 const params = {
-  appid: 'wxb98e44f5e7a956a0',
-  secret: 'a55ef17ddaa3c5bf0cabd344e6c7d17e',
-  touser: 'ohqRj6EBIUp4gzIQ3mUbULM9uQnQ',
-  template_id: 'LvDuTb8njKAv-nG_2L2GT-bkZPCJi_xmmk1Zn5zRF1U',
+  appid: 'wx46f82cb9d312a68a',
+  secret: '56aa6a924f10f8b473c378c692993fe9',
+  touser: 'ogMwa631uyHapoA-Ij4tVCAVUbCg',
+  // touser: 'ogMwa6-h-kFuOlkgz-16E2ncWGyY',
+  template_id: 'w-mvk4GNq5pH9ENYa7l5AVGpLLhwG-9UOWejecqK8-U',
+}
+
+const LOVE_DAY_START = '6/11/2022';
+const API = {
+  weather: 'https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=101200301&city=',
+  txt: 'https://api.shadiao.pro/chp',
 }
 
 const listConfig = {
   data: {
     nowDate: {
-      value: '今天是 2022/08/20 周天 ',
+      value: '',
       color: '#57E6E2',
     },
     city: {
-      value: '北京',
+      value: '鄂州',
+      color: '#9CA2A0',
+    },
+    weather: {
+      value: '',
       color: '#9CA2A0',
     },
     low: {
-      value: '29℃',
+      value: '',
       color: '#7CD47D',
     },
     high: {
-      value: '37℃',
+      value: '',
       color: '#CBA476',
     },
     loveDate: {
-      value: '999',
+      value: '',
       color: '#AEC5C8',
     },
 
     txt: {
-      value: '我习惯在包里藏一瓶百无聊赖，打发人间的白云和苍狗设计睡着的未来',
+      value: '',
       color: '#3C4244',
     },
   },
@@ -62,4 +73,6 @@ if (verifyEmpty()) {
 module.exports = {
   params,
   listConfig,
+  API,
+  LOVE_DAY_START,
 }
