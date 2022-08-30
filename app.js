@@ -18,6 +18,7 @@ async function start() {
   listConfig.data.nowDate.value = `今天是 ${new Date().toLocaleDateString()} ${week}`;
   listConfig.data.weather.value = wea;
   listConfig.data.loveDate.value = getLoveDay();
+  console.log(listConfig)
 
   try {
     access_token = await getToken(params)

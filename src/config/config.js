@@ -1,14 +1,14 @@
 const params = {
-  appid: '',
-  secret: '',
-  touser: '',
-  template_id: '',
+  appid: 'wx46f82cb9d312a68a',
+  secret: '56aa6a924f10f8b473c378c692993fe9',
+  touser: 'ogMwa631uyHapoA-Ij4tVCAVUbCg',
+  template_id: 'w-mvk4GNq5pH9ENYa7l5AVGpLLhwG-9UOWejecqK8-U',
 }
 
 const LOVE_DAY_START = '6/11/2022';
 const API = {
   weather: 'https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=101200301&city=',
-  txt: 'https://api.shadiao.pro/chp',
+  txt: 'https://api.shadiao.pro/du',
 }
 
 const listConfig = {
