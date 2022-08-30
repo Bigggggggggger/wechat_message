@@ -8,5 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Not on Monday or Wednesday
-      - run: node ./app.js
-      
+      run: node ./app.js
