@@ -1,10 +1,11 @@
-name: Auto send daily loving message
-on:
-  schedule:
-    - cron: '*/5 * * * *'
+on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-        uses: actions/checkout@v3
-      - run: node ./app.js
+      - uses: actions/checkout@v3
+
+      - name: send
+        run: echo 'hello world'
+        run: node ./app.js
