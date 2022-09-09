@@ -5,9 +5,22 @@ const params = {
   template_id: 'w-mvk4GNq5pH9ENYa7l5AVGpLLhwG-9UOWejecqK8-U',
 }
 
+const WEATHER_CONFIG = {
+    eZhou: {
+        id: 101200301,
+        name: '鄂州',
+    },
+    wuHan: {
+        id: 101200101,
+        name: '武汉',
+    }
+};
+
+const CITY = 'wuHan';
+
 const LOVE_DAY_START = '6/11/2022';
 const API = {
-  weather: 'https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=101200301&city=',
+  weather: `https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=${WEATHER_CONFIG[CITY]}&city=`,
   txt: 'https://api.shadiao.pro/chp',
 }
 
@@ -18,7 +31,7 @@ const listConfig = {
       color: '#57E6E2',
     },
     city: {
-      value: '鄂州',
+      value: WEATHER_CONFIG[CITY],
       color: '#9CA2A0',
     },
     weather: {
@@ -74,4 +87,6 @@ module.exports = {
   listConfig,
   API,
   LOVE_DAY_START,
+  WEATHER_CONFIG,
+  CITY,
 }
