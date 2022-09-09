@@ -31,7 +31,7 @@ const listConfig = {
       color: '#57E6E2',
     },
     city: {
-      value: WEATHER_CONFIG[CITY],
+      value: WEATHER_CONFIG[CITY].name,
       color: '#9CA2A0',
     },
     weather: {
