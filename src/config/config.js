@@ -20,7 +20,7 @@ const CITY = 'wuHan';
 
 const LOVE_DAY_START = '6/11/2022';
 const API = {
-  weather: `https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=${WEATHER_CONFIG[CITY]}&city=`,
+  weather: `https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=${WEATHER_CONFIG[CITY].id}&city=`,
   txt: 'https://api.shadiao.pro/chp',
 }
 
