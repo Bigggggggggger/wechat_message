@@ -18,6 +18,13 @@ async function start() {
   listConfig.data.nowDate.value = `今天是 ${new Date().toLocaleDateString()} ${week}`;
   listConfig.data.weather.value = wea;
   listConfig.data.loveDate.value = getLoveDay();
+
+  if (listConfig.data.loveDate.value % 100 === 0) {
+    listConfig.data.loveDate.color = '#E3493F';
+    listConfig.data.txt.value = `今天是我们在一起的第 ${getLoveDay() / 100} 个百日纪恋日，记得找阿川要小蛋糕哟~ （づ￣3￣）づ╭❤～`
+    listConfig.data.txt.color = '#F16514'
+  }
+  
   console.log(listConfig)
 
   try {
